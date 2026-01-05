@@ -1,0 +1,251 @@
+================================================================================
+GUIDE D'INSTALLATION - SIMPLYBOOK.ME POUR ZST BEAUTY CENTER
+================================================================================
+
+Ce guide explique comment créer un compte SimplyBook.me et récupérer les 
+informations nécessaires pour intégrer le widget de réservation au site.
+
+================================================================================
+ÉTAPE 1 : CRÉER UN COMPTE SIMPLYBOOK.ME
+================================================================================
+
+1. Allez sur le site : https://simplybook.me/en
+
+2. Cliquez sur "Sign Up" (ou "S'inscrire" selon la langue)
+
+3. Remplissez le formulaire avec les informations de ZST Beauty Center :
+   - Email : bagnonhoue@gmail.com (ou l'email de la boutique)
+   - Mot de passe : Choisissez un mot de passe sécurisé
+   - Nom du business : "Zst Beauty Center"
+   - Type de business : Sélectionnez "Beauty" ou "Beauty Salon"
+
+4. Confirmez votre email en cliquant sur le lien reçu
+
+5. Connectez-vous à votre compte SimplyBook.me
+
+
+================================================================================
+ÉTAPE 2 : CONFIGURER LES SERVICES
+================================================================================
+
+6. Dans le tableau de bord, allez à "Services"
+
+7. Ajoutez les services proposés. Pour ZST Beauty Center, créez :
+
+   SERVICE 1 - COIFFURE
+   - Nom : Coiffure
+   - Durée : 60 minutes
+   - Prix : 15.000 - 50.000 FCFA (selon le service)
+   
+   SERVICE 2 - SOINS DU VISAGE
+   - Nom : Soins du Visage
+   - Durée : 45 minutes
+   - Prix : 10.000 - 30.000 FCFA
+   
+   SERVICE 3 - SOINS DU CORPS
+   - Nom : Soins du Corps
+   - Durée : 60 minutes
+   - Prix : 15.000 - 40.000 FCFA
+   
+   SERVICE 4 - MANUCURE & PÉDICURE
+   - Nom : Manucure & Pédicure
+   - Durée : 45 minutes
+   - Prix : 8.000 - 20.000 FCFA
+
+8. Sauvegardez chaque service
+
+
+================================================================================
+ÉTAPE 3 : CONFIGURER L'EMPLACEMENT
+================================================================================
+
+9. Allez à "Location" (Lieu)
+
+10. Remplissez les informations :
+    - Nom : Zst Beauty Center
+    - Adresse : Fidjrosse, Cotonou, Bénin
+    - Téléphone : +229 67 70 35 35
+    - Email : bagnonhoue@gmail.com
+    
+11. Configurez les horaires d'ouverture :
+    - Lundi - Samedi : 9h00 - 19h00
+    - Dimanche : Fermé (ou sur rendez-vous)
+
+12. Sauvegardez
+
+
+================================================================================
+ÉTAPE 4 : CONFIGURER LES MEMBRES DU STAFF
+================================================================================
+
+13. Allez à "Staff" ou "Employees"
+
+14. Ajoutez le personnel (au moins une personne) :
+    - Nom : (nom du responsable)
+    - Email : bagnonhoue@gmail.com
+    - Services : Sélectionnez tous les services
+    - Calendrier : Configurez les jours/heures disponibles
+
+15. Sauvegardez
+
+
+================================================================================
+ÉTAPE 5 : OBTENIR LE WIDGET (IMPORTANT !)
+================================================================================
+
+16. Allez à "Settings" > "Website Integration" ou "Embed Code"
+
+17. Vous verrez un code qui ressemble à ceci (EXEMPLE) :
+    
+    <script type="text/javascript" src="https://simplybook.me/api/static/v3/widget/widget.js"></script>
+    <div id="sb_widget"></div>
+    <script>
+        var sampleBooklyWidget = new SimplybookWidget({
+            "widget_type": "iframe",
+            "url": "https://zstbeautycenter.simplybook.me",
+            "theme": "light",
+            "theme_settings": {
+                "timeline_hide_unavailable": "1",
+                "hide_past_time_slots": "0"
+            },
+            "container_id": "sb_widget"
+        });
+    </script>
+
+18. COPIEZ CE CODE COMPLET (ou au moins l'URL de votre compte)
+
+
+================================================================================
+ÉTAPE 6 : PERSONNALISER LE WIDGET (OPTIONNEL)
+================================================================================
+
+19. Avant de récupérer le code final, vous pouvez personnaliser :
+    
+    Dans "Settings" > "Customization" ou "Branding" :
+    - Couleurs : Utilisez les couleurs du site (blanc, gris, noir)
+    - Logo : Uploadez le logo de ZST Beauty Center
+    - Langue : Français
+    - Devise : XOF (Franc CFA) ou USD
+
+20. Sauvegardez les paramètres de personnalisation
+
+
+================================================================================
+ÉTAPE 7 : RÉCUPÉRER LES INFORMATIONS NÉCESSAIRES
+================================================================================
+
+RÉCUPÉREZ ET ENVOYEZ LES ÉLÉMENTS SUIVANTS À ILONA :
+
+□ 1. URL DE VOTRE SIMPLYBOOK (exemple : https://zstbeautycenter.simplybook.me)
+
+□ 2. CODE D'INTÉGRATION COMPLET (depuis "Website Integration")
+      (C'est le code JavaScript avec la balise <script> et <div>)
+
+□ 3. CONFIRMATION QUE LES SERVICES SONT BIEN CONFIGURÉS :
+      - Coiffure ✓
+      - Soins du Visage ✓
+      - Soins du Corps ✓
+      - Manucure & Pédicure ✓
+
+□ 4. CONFIRMATION QUE LES HORAIRES SONT BONS :
+      - Lundi - Samedi : 9h00 - 19h00 ✓
+      - Dimanche : Fermé ou Sur rendez-vous ✓
+
+□ 5. INFORMATIONS DE CONNEXION (LOGIN) :
+      - Email : _________________________
+      - Mot de passe : _________________________
+      (À garder secret et sûr)
+
+
+================================================================================
+POUR ENVOYER LES INFORMATIONS À ILONA
+================================================================================
+
+Envoyez un email avec tous les éléments du POINT 7 :
+
+À : (email de la personne)
+Sujet : "Informations SimplyBook.me pour intégration - ZST Beauty Center"
+
+Contenu :
+
+Bonjour,
+
+Voici les informations demandées pour intégrer le widget de réservation 
+SimplyBook.me au site de ZST Beauty Center :
+
+1. URL SimplyBook : [collez l'URL]
+
+2. Code d'intégration : 
+   [collez le code JavaScript complet]
+
+3. Services configurés : ✓ (tous configurés)
+
+4. Horaires configurés : ✓ (bien réglés)
+
+5. Identifiants : (À envoyer en sécurisé si nécessaire)
+
+Cordialement,
+[Nom du responsable]
+
+
+================================================================================
+DÉPANNAGE / QUESTIONS
+================================================================================
+
+Q : "Je ne trouve pas l'option Website Integration" ?
+R : Allez dans Settings > Embed Code ou "Integration" ou "Website Widget"
+
+Q : "Quel format de devise utiliser ?" 
+R : Utilisez XOF (Franc CFA) pour le Bénin ou USD
+
+Q : "Les services ne s'affichent pas" ?
+R : Assurez-vous que :
+   - Chaque service est assigné à au moins un membre du staff
+   - Le membre du staff a des horaires disponibles
+   - Le service n'est pas marqué comme "hidden" ou "inactif"
+
+Q : "Je ne reçois pas l'email de confirmation" ?
+R : Vérifiez le dossier spam/courrier indésirable
+
+Q : "Comment modifier les informations après avoir créé le compte" ?
+R : Allez dans Settings et modifiez ce que vous voulez, puis sauvegardez
+
+
+================================================================================
+INFORMATIONS IMPORTANTES
+================================================================================
+
+⚠️ SÉCURITÉ :
+- Gardez votre mot de passe SimplyBook secret et sûr
+- N'envoyez jamais le mot de passe par email non chiffré
+- Utilisez un mot de passe fort (maj + min + chiffres + symboles)
+
+⚠️ MISE À JOUR :
+- Si les horaires ou services changent, mettez à jour dans SimplyBook
+- Les modifications sont automatiquement réfléchies sur le site
+
+⚠️ SUPPORT :
+- SimplyBook.me a un excellent support client
+- Pour de l'aide, allez sur https://simplybook.me/help
+
+
+================================================================================
+CONTACT ZST BEAUTY CENTER
+================================================================================
+
+Une fois que vous avez créé le compte et récupéré les informations,
+contactez Ilona pour intégrer le widget au site :
+
+Téléphone : +229 67 70 35 35 (ou selon les infos du projet)
+Email : (email d'Ilona)
+
+
+================================================================================
+FIN DU GUIDE
+================================================================================
+
+Merci d'avoir suivi ce guide ! 
+Le widget sera intégré au site dès que nous recevrons les informations.
+
+Date de création : Janvier 2026
+Version : 1.0

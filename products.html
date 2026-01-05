@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boutique Zst Beauty Center - Produits de beauté et soins professionnels à Cotonou">
+    <title>Boutique - Zst Beauty Center</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products-page.css">
+    <link rel="stylesheet" href="order-modal.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="assets/images/logo_zst" alt="Zst Beauty Center" class="nav__logo-img">
+                <span class="logo-text">Zst Beauty Center</span>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#home" class="nav__link">Accueil</a>
+                    </li>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link">
+                            Nos Services <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="index.html#services" class="nav__dropdown-link"><i class="fas fa-cut"></i> Services</a></li>
+                            <li><a href="index.html#pricing" class="nav__dropdown-link"><i class="fas fa-tag"></i> Tarifs</a></li>
+                            <li><a href="index.html#booking" class="nav__dropdown-link"><i class="fas fa-calendar"></i> Réservation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="products.html" class="nav__link active-link"><i class="fas fa-shopping-bag"></i> Boutique</a>
+                    </li>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link">
+                            Découvrir <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="index.html#gallery" class="nav__dropdown-link"><i class="fas fa-images"></i> Galerie</a></li>
+                            <li><a href="index.html#testimonials" class="nav__dropdown-link"><i class="fas fa-star"></i> Avis</a></li>
+                            <li><a href="index.html#about" class="nav__dropdown-link"><i class="fas fa-info-circle"></i> À Propos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#join" class="nav__link">Carrières</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__cart" id="cartButton">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <a href="index.html#booking" class="btn btn-primary">Réserver</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="shop-hero">
+            <div class="container">
+                <h1 class="shop-hero__title">Notre Boutique</h1>
+                <p class="shop-hero__description">Découvrez notre sélection de produits professionnels pour sublimer votre beauté</p>
+            </div>
+        </section>
+
+        <section class="shop-content section">
+            <div class="container">
+                <div class="shop-filters">
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-category="all">
+                            <i class="fas fa-th"></i> Tous les produits (4)
+                        </button>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+                    <!-- Masque à l'argile jaune -->
+                    <div class="product-card" data-category="all">
+                        <div class="product-badge">Nouveau</div>
+                        <div class="product-image">
+                            <img src="assets/images/masque argile.jpg" alt="Masque à l'argile jaune">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Masque à l'argile jaune</h3>
+                            <p class="product-description">Répare et nourrit les cheveux abîmés et cassants</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.5)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">15.000 FCFA</span>
+                                <button class="btn-add-cart" data-id="1" data-name="Masque à l'argile jaune" data-price="15000" data-category="all" data-image="masque argile.jpg">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Huile Corporelle Parfumée -->
+                    <div class="product-card" data-category="all">
+                        <div class="product-badge">Populaire</div>
+                        <div class="product-image">
+                            <img src="assets/images/huilecorporelle.jpg" alt="Huile Corporelle Parfumée">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Huile Corporelle Parfumée</h3>
+                            <p class="product-description">Hydrate intensément la peau tout en laissant un parfum délicat</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(5.0)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">12.000 FCFA</span>
+                                <button class="btn-add-cart" data-id="2" data-name="Huile Corporelle Parfumée" data-price="12000" data-category="all" data-image="huilecorporelle.jpg">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Huile de Moutarde -->
+                    <div class="product-card" data-category="all">
+                        <div class="product-image">
+                            <img src="assets/images/hhuilemoutarde.jpg" alt="Huile de Moutarde">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Huile de Moutarde</h3>
+                            <p class="product-description">Stimule la croissance des cheveux et renforce les racines</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.7)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">8.500 FCFA</span>
+                                <button class="btn-add-cart" data-id="3" data-name="Huile de Moutarde" data-price="8500" data-category="all" data-image="hhuilemoutarde.jpg">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gommage Corporel -->
+                    <div class="product-card" data-category="all">
+                        <div class="product-badge">Best seller</div>
+                        <div class="product-image">
+                            <img src="assets/images/gommage.jpg" alt="Gommage Corporel">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Gommage Corporel</h3>
+                            <p class="product-description">Exfolie en douceur pour une peau lisse et éclatante</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(5.0)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">18.000 FCFA</span>
+                                <button class="btn-add-cart" data-id="4" data-name="Gommage Corporel" data-price="18000" data-category="all" data-image="gommage.jpg">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Mon Panier</h3>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Votre panier est vide</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount" id="cartTotal">0 FCFA</span>
+            </div>
+            <button class="btn btn-primary btn-order" id="orderButton" disabled>
+                <i class="fab fa-whatsapp"></i> Commander
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Order Modal -->
+    <div class="order-modal" id="orderModal">
+        <div class="order-modal__overlay" id="orderModalOverlay"></div>
+        <div class="order-modal__content">
+            <!-- Progress Bar -->
+            <div class="order-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-steps">
+                    <div class="progress-step active" data-step="1">1</div>
+                    <div class="progress-step" data-step="2">2</div>
+                    <div class="progress-step" data-step="3">3</div>
+                    <div class="progress-step" data-step="4">4</div>
+                    <div class="progress-step" data-step="5">5</div>
+                </div>
+                <div class="progress-labels">
+                    <span>Panier</span>
+                    <span>Infos</span>
+                    <span>Livraison</span>
+                    <span>Paiement</span>
+                    <span>Résumé</span>
+                </div>
+            </div>
+
+            <!-- Close Button -->
+            <button class="order-modal__close" id="orderModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Step 1: Cart Review -->
+            <div class="order-step active" data-step="1">
+                <h2><i class="fas fa-shopping-cart"></i> Récapitulatif de votre commande</h2>
+                <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem;">Vérifiez que votre commande est correcte avant de continuer</p>
+                <div class="order-cart-items" id="orderCartItems"></div>
+                <div class="order-total">
+                    <span>Total:</span>
+                    <span class="total-price" id="orderTotal">0 FCFA</span>
+                </div>
+            </div>
+
+            <!-- Step 2: Personal Info -->
+            <div class="order-step" data-step="2">
+                <h2><i class="fas fa-user"></i> Vos informations</h2>
+                <form class="order-form">
+                    <div class="form-group">
+                        <label for="orderFirstName">Prénom *</label>
+                        <input type="text" id="orderFirstName" placeholder="Votre prénom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderLastName">Nom *</label>
+                        <input type="text" id="orderLastName" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderPhone">Téléphone *</label>
+                        <input type="tel" id="orderPhone" placeholder="(+229) 67 70 35 35" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderEmail">Email</label>
+                        <input type="email" id="orderEmail" placeholder="votre@email.com">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Step 3: Delivery -->
+            <div class="order-step" data-step="3">
+                <h2><i class="fas fa-truck"></i> Mode de livraison</h2>
+                <div class="delivery-options">
+                    <label class="delivery-option">
+                        <input type="radio" name="delivery" value="domicile" required>
+                        <div class="option-content">
+                            <h3><i class="fas fa-home"></i> Livraison à domicile</h3>
+                            <p>Livraison gratuite à Cotonou</p>
+                        </div>
+                    </label>
+                    <label class="delivery-option">
+                        <input type="radio" name="delivery" value="coursier">
+                        <div class="option-content">
+                            <h3><i class="fas fa-motorcycle"></i> Coursier</h3>
+                            <p>Livraison rapide dans 24h</p>
+                        </div>
+                    </label>
+                    <label class="delivery-option">
+                        <input type="radio" name="delivery" value="salon">
+                        <div class="option-content">
+                            <h3><i class="fas fa-store"></i> Retrait au salon</h3>
+                            <p>Fidjrosse, Cotonou</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Step 4: Payment -->
+            <div class="order-step" data-step="4">
+                <h2><i class="fas fa-credit-card"></i> Mode de paiement</h2>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="moov" required>
+                        <div class="option-content">
+                            <h3><i class="fas fa-mobile-alt"></i> Moov Money</h3>
+                            <p>Paiement par mobile money</p>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="mtn">
+                        <div class="option-content">
+                            <h3><i class="fas fa-mobile-alt"></i> MTN Money</h3>
+                            <p>Paiement par mobile money</p>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="online">
+                        <div class="option-content">
+                            <h3><i class="fas fa-credit-card"></i> Paiement en ligne</h3>
+                            <p>Carte bancaire sécurisée</p>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="onsite">
+                        <div class="option-content">
+                            <h3><i class="fas fa-hand-holding-usd"></i> À la livraison</h3>
+                            <p>Paiement sur place</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Step 5: Summary -->
+            <div class="order-step" data-step="5">
+                <h2><i class="fas fa-check-circle"></i> Résumé de votre commande</h2>
+                <div class="order-summary">
+                    <div class="summary-section">
+                        <h3>Client</h3>
+                        <p id="summaryClient"></p>
+                    </div>
+                    <div class="summary-section">
+                        <h3>Produits</h3>
+                        <div id="summaryProducts"></div>
+                    </div>
+                    <div class="summary-section">
+                        <h3>Livraison</h3>
+                        <p id="summaryDelivery"></p>
+                    </div>
+                    <div class="summary-section">
+                        <h3>Paiement</h3>
+                        <p id="summaryPayment"></p>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total:</span>
+                        <span id="summaryTotal">0 FCFA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="order-buttons">
+                <button class="btn btn-secondary" id="orderPrevBtn">
+                    <i class="fas fa-arrow-left"></i> Précédent
+                </button>
+                <button class="btn btn-primary" id="orderNextBtn">
+                    Suivant <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-success" id="orderWhatsAppBtn" style="display:none;">
+                    <i class="fab fa-whatsapp"></i> Commander via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Zst Beauty Center</h3>
+                    <p class="footer__description">Votre destination beauté et bien-être à Cotonou</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Navigation</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#pricing">Tarifs</a></li>
+                        <li><a href="products.html">Boutique</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Contact</h4>
+                    <ul class="footer__info">
+                        <li><i class="fas fa-map-marker-alt"></i> Fidjrosse, Cotonou, Bénin</li>
+                        <li><i class="fas fa-phone"></i> +229 67 70 35 35</li>
+                        <li><i class="fas fa-envelope"></i> bagnonhoue@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Horaires</h4>
+                    <ul class="footer__info">
+                        <li>Lundi - Samedi</li>
+                        <li>9h00 - 19h00</li>
+                        <li>Dimanche: Fermé</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom-content">
+                    <p class="footer__copyright">&copy; 2026 Zst Beauty Center. Tous droits réservés.</p>
+                    <p class="footer__credit">Site web conçu et développé par Ilona Capo</p>
+                    <div class="footer__legal-links">
+                        <a href="mentions-legales.html">Mentions légales</a>
+                        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                        <a href="cgu.html">CGU</a>
+                        <a href="cookies.html">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+    <script src="order-modal.js"></script>
+</body>
+</html>

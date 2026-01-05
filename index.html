@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Zst Beauty Center - Centre de beauté et bien-être à Cotonou, Bénin. Services de coiffure, soins du corps, soins du visage et boutique. Réservez en ligne ou via WhatsApp.">
+    <meta name="keywords" content="beauté, coiffure, soins visage, soins corps, salon, Cotonou, Bénin, massage">
+    <meta name="author" content="Zst Beauty Center">
+    <meta name="theme-color" content="#8F9094">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:title" content="Zst Beauty Center | Beauté & Bien-être à Cotonou">
+    <meta property="og:description" content="Découvrez nos services premium de coiffure, soins du corps et du visage à Cotonou, Bénin.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/hero.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="order-modal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="assets/images/logo_zst" alt="Zst Beauty Center" class="nav__logo-img">
+                <span class="logo-text">Zst Beauty Center</span>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#home" class="nav__link active-link">Accueil</a>
+                    </li>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link">
+                            Nos Services <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="index.html#services" class="nav__dropdown-link"><i class="fas fa-cut"></i> Services</a></li>
+                            <li><a href="index.html#pricing" class="nav__dropdown-link"><i class="fas fa-tag"></i> Tarifs</a></li>
+                            <li><a href="index.html#booking" class="nav__dropdown-link"><i class="fas fa-calendar"></i> Réservation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="products.html" class="nav__link"><i class="fas fa-shopping-bag"></i> Boutique</a>
+                    </li>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__link">
+                            Découvrir <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="index.html#gallery" class="nav__dropdown-link"><i class="fas fa-images"></i> Galerie</a></li>
+                            <li><a href="index.html#testimonials" class="nav__dropdown-link"><i class="fas fa-star"></i> Avis</a></li>
+                            <li><a href="index.html#about" class="nav__dropdown-link"><i class="fas fa-info-circle"></i> À Propos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#join" class="nav__link">Carrières</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="products.html" class="nav__cart" id="cartButton">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <a href="index.html#booking" class="btn btn-primary">Réserver</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: url('assets/images/hero.webp');">
+        <div class="hero__overlay"></div>
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__title-accent">Révélez</span> votre beauté naturelle
+                </h1>
+                <p class="hero__description">
+                    Centre de beauté et bien-être à Cotonou. Découvrez nos services de coiffure, soins du corps et du visage dans un cadre élégant et relaxant.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#booking" class="btn btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i> Prendre rendez-vous
+                    </a>
+                    <a href="#services" class="btn btn-secondary btn-large">
+                        <i class="fas fa-arrow-down"></i> Découvrir nos services
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#services" class="hero__scroll-link">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Nos expertises</span>
+                <h2 class="section__title">Services Premium</h2>
+                <p class="section__description">
+                    Des prestations de qualité adaptées à vos besoins, réalisées par des professionnels passionnés
+                </p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="service-card__title">Coiffure</h3>
+                    <p class="service-card__description">
+                        Coupes, coiffures, tresses, tissages, défrisages et coloration. Notre équipe sublime votre chevelure avec expertise.
+                    </p>
+                    <ul class="service-card__list">
+                        <li><i class="fas fa-check"></i> Coupes & Coiffures</li>
+                        <li><i class="fas fa-check"></i> Tresses & Tissages</li>
+                        <li><i class="fas fa-check"></i> Coloration & Mèches</li>
+                        <li><i class="fas fa-check"></i> Soins capillaires</li>
+                    </ul>
+                    <a href="#booking" class="service-card__btn">Réserver <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="service-card__title">Soins du Corps</h3>
+                    <p class="service-card__description">
+                        Massages relaxants, gommages, épilations et soins corporels pour une peau douce et revitalisée.
+                    </p>
+                    <ul class="service-card__list">
+                        <li><i class="fas fa-check"></i> Massages thérapeutiques</li>
+                        <li><i class="fas fa-check"></i> Gommages & Enveloppements</li>
+                        <li><i class="fas fa-check"></i> Épilation professionnelle</li>
+                        <li><i class="fas fa-check"></i> Soins hydratants</li>
+                    </ul>
+                    <a href="#booking" class="service-card__btn">Réserver <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="service-card__title">Soins du Visage</h3>
+                    <p class="service-card__description">
+                        Nettoyages de peau, masques purifiants, soins anti-âge et maquillage professionnel pour sublimer votre visage.
+                    </p>
+                    <ul class="service-card__list">
+                        <li><i class="fas fa-check"></i> Nettoyage de peau</li>
+                        <li><i class="fas fa-check"></i> Soins anti-âge</li>
+                        <li><i class="fas fa-check"></i> Maquillage événementiel</li>
+                        <li><i class="fas fa-check"></i> Soins hydratants</li>
+                    </ul>
+                    <a href="#booking" class="service-card__btn">Réserver <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3 class="service-card__title">Boutique</h3>
+                    <p class="service-card__description">
+                        Produits capillaires, cosmétiques et accessoires de beauté soigneusement sélectionnés pour vous.
+                    </p>
+                    <ul class="service-card__list">
+                        <li><i class="fas fa-check"></i> Produits capillaires</li>
+                        <li><i class="fas fa-check"></i> Cosmétiques premium</li>
+                        <li><i class="fas fa-check"></i> Accessoires beauté</li>
+                        <li><i class="fas fa-check"></i> Soins visage & corps</li>
+                    </ul>
+                    <a href="#products" class="service-card__btn">Voir les produits <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section" id="pricing">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Tarifs indicatifs</span>
+                <h2 class="section__title">Nos Prestations</h2>
+                <p class="section__description">
+                    Des tarifs transparents pour des services de qualité professionnelle
+                </p>
+            </div>
+
+            <div class="pricing__container">
+                <!-- Single Pricing Card -->
+                <div class="pricing-card-unique">
+                    <div class="pricing-card__header">
+                        <i class="fas fa-tags"></i>
+                        <h3>Nos Tarifs</h3>
+                        <p>Tarifs indicatifs des prestations principales</p>
+                    </div>
+                    
+                    <div class="pricing-card__body">
+                        <div class="pricing-category">
+                            <h4><i class="fas fa-cut"></i> Coiffure</h4>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Coupe simple</span>
+                                <span class="pricing-item__price">3.000 FCFA</span>
+                            </div>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Tresses (selon modèle)</span>
+                                <span class="pricing-item__price">à partir de 8.000 FCFA</span>
+                            </div>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Tissage complet</span>
+                                <span class="pricing-item__price">à partir de 15.000 FCFA</span>
+                            </div>
+                        </div>
+
+                        <div class="pricing-category">
+                            <h4><i class="fas fa-spa"></i> Soins du Corps</h4>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Massage (30min)</span>
+                                <span class="pricing-item__price">8.000 FCFA</span>
+                            </div>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Gommage corps</span>
+                                <span class="pricing-item__price">10.000 FCFA</span>
+                            </div>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Épilation jambes</span>
+                                <span class="pricing-item__price">7.000 FCFA</span>
+                            </div>
+                        </div>
+
+                        <div class="pricing-category">
+                            <h4><i class="fas fa-star"></i> Soins du Visage</h4>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Nettoyage de peau</span>
+                                <span class="pricing-item__price">8.000 FCFA</span>
+                            </div>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Soin anti-âge</span>
+                                <span class="pricing-item__price">12.000 FCFA</span>
+                            </div>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Maquillage mariée</span>
+                                <span class="pricing-item__price">à partir de 25.000 FCFA</span>
+                            </div>
+                        </div>
+
+                        <div class="pricing-category">
+                            <h4><i class="fas fa-hand-sparkles"></i> Manucure & Pédicure</h4>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Manucure simple</span>
+                                <span class="pricing-item__price">3.000 FCFA</span>
+                            </div>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Manucure gel</span>
+                                <span class="pricing-item__price">8.000 FCFA</span>
+                            </div>
+                            <div class="pricing-item">
+                                <span class="pricing-item__name">Pédicure spa</span>
+                                <span class="pricing-item__price">7.000 FCFA</span>
+                            </div>
+                        </div>
+
+                        <div class="pricing-more">
+                            <p><i class="fas fa-info-circle"></i> Et bien d'autres prestations disponibles : colorations, défrisages, épilations complètes, soins spécifiques, etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing__note">
+                <p>Tarifs indicatifs susceptibles de varier selon la prestation.</p>
+                <button class="btn btn-primary" id="openPricingQuote">
+                    <i class="fas fa-search"></i> En savoir plus & Demander un devis
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section" id="products">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Nos coups de cœur</span>
+                <h2 class="section__title">Produits Phares</h2>
+                <p class="section__description">
+                    Découvrez notre sélection de produits premium pour prendre soin de votre beauté au quotidien
+                </p>
+            </div>
+
+            <div class="products__grid">
+                <div class="product-card">
+                    <div class="product-card__badge">Nouveau</div>
+                    <div class="product-card__image">
+                        <img src="assets/images/masque argile.jpg" alt="Masque à l'argile jaune" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Masque à l'argile jaune</h3>
+                        <p class="product-card__description">
+                            Répare et nourrit les cheveux abîmés et cassants
+                        </p>
+                        <div class="product-card__price">15.000 FCFA</div>
+                        <button class="btn btn-whatsapp product-order-btn" data-product="Masque à l'argile jaune" data-price="15000" data-image="masque argile.jpg">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__badge">Populaire</div>
+                    <div class="product-card__image">
+                        <img src="assets/images/huilecorporelle.jpg" alt="Huile corporelle parfumée" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Huile Corporelle Parfumée</h3>
+                        <p class="product-card__description">
+                            Hydrate intensément la peau tout en laissant un parfum délicat
+                        </p>
+                        <div class="product-card__price">12.000 FCFA</div>
+                        <button class="btn btn-whatsapp product-order-btn" data-product="Huile Corporelle Parfumée" data-price="12000" data-image="huilecorporelle.jpg">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="assets/images/hhuilemoutarde.jpg" alt="Huile de moutarde" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Huile de Moutarde</h3>
+                        <p class="product-card__description">
+                            Stimule la croissance des cheveux et renforce les racines
+                        </p>
+                        <div class="product-card__price">8.500 FCFA</div>
+                        <button class="btn btn-whatsapp product-order-btn" data-product="Huile de Moutarde" data-price="8500" data-image="hhuilemoutarde.jpg">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__badge">Best seller</div>
+                    <div class="product-card__image">
+                        <img src="assets/images/gommage.jpg" alt="Gommage corporel" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Gommage Corporel</h3>
+                        <p class="product-card__description">
+                            Exfolie en douceur pour une peau lisse et éclatante
+                        </p>
+                        <div class="product-card__price">18.000 FCFA</div>
+                        <button class="btn btn-whatsapp product-order-btn" data-product="Lait Corporel Éclaircissant" data-price="18000" data-image="gommage.jpg">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products__cta">
+                <p>Découvrez tous nos produits de beauté professionnels</p>
+                <a href="products.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-shopping-bag"></i> Visiter notre boutique
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image">
+                    <img src="assets/images/salon.jpg" alt="Zst Beauty Center - Salon de beauté à Cotonou" loading="lazy">
+                    <div class="about__stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Clients satisfaits</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__content">
+                    <span class="section__subtitle">Notre histoire</span>
+                    <h2 class="section__title">À Propos de Zst Beauty Center</h2>
+                    <p class="about__text">
+                        <strong>Zst Beauty Center</strong> est votre destination bien-être et beauté à Cotonou. Depuis notre ouverture, nous nous engageons à offrir des services de qualité supérieure dans un environnement moderne et accueillant.
+                    </p>
+                    <p class="about__text">
+                        Notre équipe de professionnels passionnés et qualifiés met son expertise à votre service pour sublimer votre beauté naturelle. Nous utilisons des produits premium et des techniques innovantes pour garantir votre satisfaction.
+                    </p>
+
+                    <div class="about__features">
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Professionnalisme</h4>
+                                <p>Équipe expérimentée et certifiée</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Écoute & Conseil</h4>
+                                <p>Prestations personnalisées</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-sparkles"></i>
+                            <div>
+                                <h4>Produits Premium</h4>
+                                <p>Sélection rigoureuse de qualité</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#booking" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i> Réserver maintenant
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Notre galerie</span>
+                <h2 class="section__title">Découvrez Notre Univers</h2>
+                <p class="section__description">
+                    Les moments les plus beaux de nos clientes et de notre salon
+                </p>
+            </div>
+
+            <div class="gallery__grid">
+                <div class="gallery-card">
+                    <div class="gallery-card__image">
+                        <img src="assets/images/goddessbraid.jpg" alt="Coiffure tresses déesses" loading="lazy">
+                    </div>
+                    <div class="gallery-card__content">
+                        <h3>Tresses Déesses</h3>
+                        <p>Coiffures élégantes et modernes</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-card__image">
+                        <img src="assets/images/skincare.jpg" alt="Soins du visage premium" loading="lazy">
+                    </div>
+                    <div class="gallery-card__content">
+                        <h3>Soins Visage</h3>
+                        <p>Traitements premium pour votre peau</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-card__image">
+                        <img src="assets/images/salon.jpg" alt="Notre salon de beauté" loading="lazy">
+                    </div>
+                    <div class="gallery-card__content">
+                        <h3>Notre Salon</h3>
+                        <p>Un cadre élégant et accueillant</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-card__image">
+                        <img src="assets/images/beauteetstyle.jpg" alt="Modèle beauté ZST" loading="lazy">
+                    </div>
+                    <div class="gallery-card__content">
+                        <h3>Beauté & Style</h3>
+                        <p>Transformations réussies</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-card__image">
+                        <img src="assets/images/massage.jpg" alt="Massage relaxant" loading="lazy">
+                    </div>
+                    <div class="gallery-card__content">
+                        <h3>Massages Thérapeutiques</h3>
+                        <p>Détente et bien-être garantis</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-card__image">
+                        <img src="assets/images/manucurepedi.jpg" alt="Manucure et pédicure" loading="lazy">
+                    </div>
+                    <div class="gallery-card__content">
+                        <h3>Manucure & Pédicure</h3>
+                        <p>Ongles sublimes et durables</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Avis clients</span>
+                <h2 class="section__title">Ce que nos clients disent</h2>
+                <p class="section__description">
+                    La satisfaction de nos clients est notre plus belle récompense
+                </p>
+            </div>
+
+            <div class="testimonials__grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "C'est du professionnalisme. Tout y est bien pensé pour le grand soin de la femme. Sans oublier l'entretien."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <h4>Annie GBAGUIDI</h4>
+                        <span>Client depuis 7 ans</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Salon agréable et très accueillant. Service de qualité avec une équipe au petit soin."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <h4>Thérèse Demas</h4>
+                        <span>Client depuis 7 ans</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Professionnalisme, cadre propre et équipé. Une vraie expérience de bien-être à chaque visite."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <h4>VANOL DISTRIBUTION</h4>
+                        <span>Client depuis 4 ans</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Équipe dynamique et passionnée. J'ai découvert des services que je ne connaissais pas. Très satisfait!"
+                    </p>
+                    <div class="testimonial-card__author">
+                        <h4>Client Anonyme</h4>
+                        <span>Recommandé par un ami</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials__rating">
+                <div class="rating-item">
+                    <span class="rating-score">4.1/5</span>
+                    <span class="rating-label">Note moyenne Google</span>
+                    <div class="stars-display">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <p class="rating-info">Basée sur 29 avis vérifiés</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking section" id="booking">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Prenez rendez-vous</span>
+                <h2 class="section__title">Réservez votre créneau</h2>
+                <p class="section__description">
+                    Choisissez votre service et réservez en ligne en quelques clics
+                </p>
+            </div>
+
+            <div class="booking__content">
+                <div class="booking__widget">
+                    <!-- SimplyBook Widget sera intégré ici -->
+                    <div id="simplybook-widget" class="simplybook-container">
+                        <!-- Le widget SimplyBook sera inséré ici via JavaScript -->
+                        <p class="widget-placeholder">
+                            <i class="fas fa-calendar-alt"></i>
+                            Widget de réservation SimplyBook
+                        </p>
+                    </div>
+                </div>
+
+                <div class="booking__alternative">
+                    <h3>Ou réservez via WhatsApp</h3>
+                    <p>Préférez-vous réserver directement avec nous ? Contactez-nous sur WhatsApp !</p>
+                    <button class="btn btn-whatsapp btn-large" id="openWhatsAppBooking">
+                        <i class="fab fa-whatsapp"></i> Réserver sur WhatsApp
+                    </button>
+
+                    <div class="booking__info">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <p>+229 67 70 35 35</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Horaires</strong>
+                                <p>Lun - Sam : 9h00 - 19h00</p>
+                                <p>Dimanche : Sur rendez-vous</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <span class="section__subtitle">Restons en contact</span>
+                    <h2 class="section__title">Contactez-nous</h2>
+                    <p class="contact__description">
+                        Notre équipe est à votre écoute pour répondre à toutes vos questions
+                    </p>
+
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>Fidjrosse, Cotonou, Bénin<br>Face à l'église Saint François d'Assise</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+229 67 70 35 35</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@zstbeauty.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Horaires d'ouverture</h4>
+                                <p>Lundi - Samedi : 9h00 - 19h00<br>Dimanche : Sur rendez-vous uniquement</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__social">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-links">
+                            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://wa.me/22997000000" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126084.39024346805!2d2.3644904!3d6.3703309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1024a9a6309fd7bf%3A0x7f07c5254c750bc3!2sCotonou%2C%20Benin!5e0!3m2!1sen!2s!4v1234567890" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="join section" id="join">
+        <div class="container">
+            <div class="join__content">
+                <div class="section__header">
+                    <span class="section__subtitle">Carrières</span>
+                    <h2 class="section__title">Rejoignez Notre Équipe</h2>
+                    <p class="section__description">
+                        Vous êtes passionné(e) par la beauté et le bien-être ? Rejoignez l'équipe Zst Beauty Center et développez votre carrière dans un environnement stimulant.
+                    </p>
+                </div>
+
+                <div class="join__grid">
+                    <div class="join-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Formation continue</h3>
+                        <p>Développez vos compétences avec nos programmes de formation réguliers</p>
+                    </div>
+
+                    <div class="join-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Équipe dynamique</h3>
+                        <p>Travaillez dans une ambiance conviviale avec des professionnels passionnés</p>
+                    </div>
+
+                    <div class="join-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Évolution de carrière</h3>
+                        <p>Profitez d'opportunités d'avancement et de développement professionnel</p>
+                    </div>
+                </div>
+
+                <div class="join__cta">
+                    <p>Intéressé(e) ? Envoyez-nous votre CV et lettre de motivation</p>
+                    <div class="join__buttons">
+                        <button class="btn btn-primary" id="openRecruitmentModal">
+                            <i class="fas fa-envelope"></i> Postuler maintenant
+                        </button>
+                        <a href="https://wa.me/22967703535" class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Nous contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__about">
+                    <h3 class="footer__logo">Zst Beauty Center</h3>
+                    <p>Votre destination beauté et bien-être à Cotonou. Révélez votre beauté naturelle avec nos services premium.</p>
+                    <div class="footer__social">
+                    <a href="https://facebook.com/zst_beauty_center" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/zst_beauty_center" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/22967703535" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Tarifs</a></li>
+                        <li><a href="#products">Boutique</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Coiffure</a></li>
+                        <li><a href="#services">Soins du Corps</a></li>
+                        <li><a href="#services">Soins du Visage</a></li>
+                        <li><a href="#products">Boutique</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Fidjrosse, Cotonou, Bénin</li>
+                        <li><i class="fas fa-phone"></i> +229 67 70 35 35</li>
+                        <li><i class="fas fa-envelope"></i> bagnonhoue@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Sam: 9h-19h</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom-content">
+                    <div class="footer__copyright">
+                        <p>&copy; 2026 Zst Beauty Center. Tous droits réservés.</p>
+                        <p class="footer__credit">Site web conçu et développé par <strong>Ilona Capo</strong></p>
+                    </div>
+                    <div class="footer__legal-links">
+                        <a href="#mentions-legales">Mentions légales</a>
+                        <a href="#politique-confidentialite">Politique de confidentialité</a>
+                        <a href="#cgu">Conditions générales d'utilisation</a>
+                        <a href="#cookies">Gestion des cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scroll-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/22997000000?text=Bonjour, j'ai une question" class="whatsapp-float" target="_blank" aria-label="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Pricing Quote Modal -->
+    <div class="pricing-quote-modal" id="pricingQuoteModal">
+        <div class="booking-modal__overlay"></div>
+        <div class="booking-modal__content">
+            <button class="booking-modal__close" id="closePricingModal">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Progress Bar -->
+            <div class="booking-progress">
+                <div class="booking-progress__bar">
+                    <div class="booking-progress__fill" id="quoteProgressFill"></div>
+                </div>
+                <div class="booking-progress__text" id="quoteProgressText">Étape 1 sur 3</div>
+            </div>
+
+            <!-- Slide 1: Service Selection -->
+            <div class="quote-slide active" data-slide="1">
+                <h2 class="booking-slide__title">Pour quel type de service souhaitez-vous un devis ?</h2>
+                <p class="booking-slide__subtitle">Vous pouvez sélectionner plusieurs services</p>
+                <div class="booking-options quote-multi-select">
+                    <button class="booking-option quote-option" data-service="cheveux">
+                        <i class="fas fa-cut"></i>
+                        <span>Coiffure</span>
+                    </button>
+                    <button class="booking-option quote-option" data-service="corps">
+                        <i class="fas fa-spa"></i>
+                        <span>Soins du Corps</span>
+                    </button>
+                    <button class="booking-option quote-option" data-service="visage">
+                        <i class="fas fa-star"></i>
+                        <span>Soins du Visage</span>
+                    </button>
+                    <button class="booking-option quote-option" data-service="ongles">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <span>Manucure & Pédicure</span>
+                    </button>
+                </div>
+                <button class="btn btn-primary" id="quoteStep1Next" style="margin-top: 2rem; width: 100%;">
+                    Continuer <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Slide 2: Details & Budget -->
+            <div class="quote-slide" data-slide="2">
+                <h2 class="booking-slide__title">Précisez vos besoins</h2>
+                <div class="booking-form">
+                    <label for="quoteDetails" class="booking-label">Décrivez les prestations souhaitées</label>
+                    <textarea id="quoteDetails" class="booking-textarea" placeholder="Exemple : Knotless braids mi-longues, manucure gel avec nail art, soin du visage hydratant..." rows="4"></textarea>
+                    
+                    <label for="quoteBudget" class="booking-label">Budget estimé (optionnel)</label>
+                    <select id="quoteBudget" class="booking-input">
+                        <option value="">Je ne sais pas</option>
+                        <option value="Moins de 10.000 FCFA">Moins de 10.000 FCFA</option>
+                        <option value="10.000 - 20.000 FCFA">10.000 - 20.000 FCFA</option>
+                        <option value="20.000 - 50.000 FCFA">20.000 - 50.000 FCFA</option>
+                        <option value="50.000 - 100.000 FCFA">50.000 - 100.000 FCFA</option>
+                        <option value="Plus de 100.000 FCFA">Plus de 100.000 FCFA</option>
+                    </select>
+                    
+                    <label for="quoteDate" class="booking-label">Date souhaitée (optionnel)</label>
+                    <input type="date" id="quoteDate" class="booking-input">
+                    
+                    <button class="btn btn-primary" id="quoteStep2Next" style="width: 100%;">
+                        Continuer <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 3: Contact Info -->
+            <div class="quote-slide" data-slide="3">
+                <h2 class="booking-slide__title">Vos coordonnées</h2>
+                <div class="booking-form">
+                    <input type="text" id="quoteName" class="booking-input" placeholder="Votre nom complet" required>
+                    <input type="tel" id="quotePhone" class="booking-input" placeholder="Votre numéro de téléphone" required>
+                    <input type="email" id="quoteEmail" class="booking-input" placeholder="Votre email (optionnel)">
+                    
+                    <button class="btn btn-primary" id="submitQuote" style="width: 100%;">
+                        <i class="fab fa-whatsapp"></i> Envoyer la demande de devis
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="booking-nav">
+                <button class="btn btn-secondary quote-back" id="quoteBack" style="display: none;">
+                    <i class="fas fa-arrow-left"></i> Retour
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recruitment Modal -->
+    <div class="booking-modal" id="recruitmentModal">
+        <div class="booking-modal__overlay"></div>
+        <div class="booking-modal__content">
+            <button class="booking-modal__close" id="closeRecruitmentModal">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="booking-header">
+                <h2 class="booking-title">Rejoindre l'équipe Zst Beauty Center</h2>
+                <p class="booking-subtitle">Complétez votre candidature en quelques étapes</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="booking-progress">
+                <div class="booking-progress__bar">
+                    <div class="booking-progress__fill" id="recruitmentProgressFill"></div>
+                </div>
+                <p class="booking-progress__text" id="recruitmentProgressText">Étape 1 sur 3</p>
+            </div>
+
+            <!-- Recruitment Slides -->
+            <div class="booking-slides">
+                <!-- Slide 1: Type de poste -->
+                <div class="booking-slide recruitment-slide active" data-slide="1">
+                    <h3 class="slide-title">
+                        <i class="fas fa-briefcase"></i>
+                        Type de poste recherché
+                    </h3>
+                    <p class="slide-description">Quel type de poste vous intéresse ?</p>
+
+                    <div class="position-types">
+                        <div class="position-type-card" data-type="salarie">
+                            <div class="position-type-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Salarié(e)</h4>
+                            <p>Poste à temps plein ou temps partiel</p>
+                            <ul class="position-benefits">
+                                <li><i class="fas fa-check"></i> Contrat de travail</li>
+                                <li><i class="fas fa-check"></i> Rémunération fixe</li>
+                                <li><i class="fas fa-check"></i> Avantages sociaux</li>
+                            </ul>
+                        </div>
+
+                        <div class="position-type-card" data-type="apprenti">
+                            <div class="position-type-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h4>Apprenti(e)</h4>
+                            <p>Formation professionnelle avec accompagnement</p>
+                            <ul class="position-benefits">
+                                <li><i class="fas fa-check"></i> Formation pratique</li>
+                                <li><i class="fas fa-check"></i> Mentorat personnalisé</li>
+                                <li><i class="fas fa-check"></i> Indemnité de formation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" id="recruitmentStep1Next" style="width: 100%; margin-top: 2rem;" disabled>
+                        Continuer <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Slide 2: Informations personnelles -->
+                <div class="booking-slide recruitment-slide" data-slide="2">
+                    <h3 class="slide-title">
+                        <i class="fas fa-user"></i>
+                        Vos informations
+                    </h3>
+                    <p class="slide-description">Veuillez renseigner vos coordonnées</p>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="recruitFirstName">
+                                <i class="fas fa-user"></i> Prénom *
+                            </label>
+                            <input type="text" id="recruitFirstName" class="form-input" placeholder="Votre prénom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recruitLastName">
+                                <i class="fas fa-user"></i> Nom *
+                            </label>
+                            <input type="text" id="recruitLastName" class="form-input" placeholder="Votre nom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recruitEmail">
+                                <i class="fas fa-envelope"></i> Email *
+                            </label>
+                            <input type="email" id="recruitEmail" class="form-input" placeholder="votre.email@exemple.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recruitPhone">
+                                <i class="fas fa-phone"></i> Téléphone *
+                            </label>
+                            <input type="tel" id="recruitPhone" class="form-input" placeholder="+229 XX XX XX XX" required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="recruitAddress">
+                                <i class="fas fa-map-marker-alt"></i> Adresse
+                            </label>
+                            <input type="text" id="recruitAddress" class="form-input" placeholder="Votre adresse à Cotonou">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="recruitExperience">
+                                <i class="fas fa-briefcase"></i> Expérience professionnelle
+                            </label>
+                            <textarea id="recruitExperience" class="form-input" rows="3" placeholder="Décrivez brièvement votre expérience dans le domaine de la beauté..."></textarea>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" id="recruitmentStep2Next" style="width: 100%; margin-top: 2rem;">
+                        Continuer <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Slide 3: Documents -->
+                <div class="booking-slide recruitment-slide" data-slide="3">
+                    <h3 class="slide-title">
+                        <i class="fas fa-file-upload"></i>
+                        Documents de candidature
+                    </h3>
+                    <p class="slide-description">Joignez vos documents (CV et lettre de motivation)</p>
+
+                    <div class="file-upload-section">
+                        <div class="file-upload-group">
+                            <label for="recruitCV" class="file-upload-label">
+                                <div class="file-upload-icon">
+                                    <i class="fas fa-file-pdf"></i>
+                                </div>
+                                <div class="file-upload-text">
+                                    <strong>CV (Curriculum Vitae) *</strong>
+                                    <span class="file-name" id="cvFileName">Aucun fichier sélectionné</span>
+                                    <small>Format accepté: PDF, DOC, DOCX (max 5MB)</small>
+                                </div>
+                                <input type="file" id="recruitCV" accept=".pdf,.doc,.docx" required hidden>
+                                <button type="button" class="btn btn-outline" onclick="document.getElementById('recruitCV').click()">
+                                    <i class="fas fa-upload"></i> Choisir un fichier
+                                </button>
+                            </label>
+                        </div>
+
+                        <div class="file-upload-group">
+                            <label for="recruitCoverLetter" class="file-upload-label">
+                                <div class="file-upload-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="file-upload-text">
+                                    <strong>Lettre de motivation</strong>
+                                    <span class="file-name" id="coverLetterFileName">Aucun fichier sélectionné</span>
+                                    <small>Format accepté: PDF, DOC, DOCX (max 5MB)</small>
+                                </div>
+                                <input type="file" id="recruitCoverLetter" accept=".pdf,.doc,.docx" hidden>
+                                <button type="button" class="btn btn-outline" onclick="document.getElementById('recruitCoverLetter').click()">
+                                    <i class="fas fa-upload"></i> Choisir un fichier
+                                </button>
+                            </label>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="recruitMessage">
+                                <i class="fas fa-comment"></i> Message (optionnel)
+                            </label>
+                            <textarea id="recruitMessage" class="form-input" rows="4" placeholder="Ajoutez un message pour accompagner votre candidature..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="recruitment-summary" id="recruitmentSummary" style="display: none;">
+                        <h4><i class="fas fa-check-circle"></i> Résumé de votre candidature</h4>
+                        <div class="summary-content">
+                            <p><strong>Poste :</strong> <span id="summaryPosition"></span></p>
+                            <p><strong>Nom :</strong> <span id="summaryName"></span></p>
+                            <p><strong>Email :</strong> <span id="summaryEmail"></span></p>
+                            <p><strong>Téléphone :</strong> <span id="summaryPhone"></span></p>
+                            <p><strong>Documents :</strong> <span id="summaryDocs"></span></p>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" id="submitRecruitment" style="width: 100%; margin-top: 2rem;">
+                        <i class="fas fa-paper-plane"></i> Envoyer ma candidature
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="booking-nav">
+                <button class="btn btn-secondary" id="recruitmentBack" style="display: none;">
+                    <i class="fas fa-arrow-left"></i> Retour
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Order Modal -->
+    <div class="product-order-modal" id="productOrderModal" style="display: none;">
+        <div class="booking-modal__overlay"></div>
+        <div class="booking-modal__content">
+            <button class="booking-modal__close" id="closeOrderModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- NEW ORDER MODAL (5-step checkout) -->
+    <div class="order-modal" id="orderModal">
+        <div class="order-modal__overlay" id="orderModalOverlay"></div>
+        <div class="order-modal__content">
+            <!-- Progress Bar -->
+            <div class="order-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-steps">
+                    <div class="progress-step active" data-step="1">1</div>
+                    <div class="progress-step" data-step="2">2</div>
+                    <div class="progress-step" data-step="3">3</div>
+                    <div class="progress-step" data-step="4">4</div>
+                    <div class="progress-step" data-step="5">5</div>
+                </div>
+                <div class="progress-labels">
+                    <span>Panier</span>
+                    <span>Infos</span>
+                    <span>Livraison</span>
+                    <span>Paiement</span>
+                    <span>Résumé</span>
+                </div>
+            </div>
+
+            <!-- Close Button -->
+            <button class="order-modal__close" id="orderModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Step 1: Cart Review -->
+            <div class="order-step active" data-step="1">
+                <h2><i class="fas fa-shopping-cart"></i> Récapitulatif de votre commande</h2>
+                <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.95rem;">Vérifiez que votre commande est correcte avant de continuer</p>
+                <div class="order-cart-items" id="orderCartItems"></div>
+                <div class="order-total">
+                    <span>Total:</span>
+                    <span class="total-price" id="orderTotal">0 FCFA</span>
+                </div>
+            </div>
+
+            <!-- Step 2: Personal Info -->
+            <div class="order-step" data-step="2">
+                <h2><i class="fas fa-user"></i> Vos informations</h2>
+                <form class="order-form">
+                    <div class="form-group">
+                        <label for="orderFirstName">Prénom *</label>
+                        <input type="text" id="orderFirstName" placeholder="Votre prénom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderLastName">Nom *</label>
+                        <input type="text" id="orderLastName" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderPhone">Téléphone *</label>
+                        <input type="tel" id="orderPhone" placeholder="(+229) 67 70 35 35" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderEmail">Email</label>
+                        <input type="email" id="orderEmail" placeholder="votre@email.com">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Step 3: Delivery -->
+            <div class="order-step" data-step="3">
+                <h2><i class="fas fa-truck"></i> Mode de livraison</h2>
+                <div class="delivery-options">
+                    <label class="delivery-option">
+                        <input type="radio" name="delivery" value="domicile" required>
+                        <div class="option-content">
+                            <h3><i class="fas fa-home"></i> Livraison à domicile</h3>
+                            <p>Livraison gratuite à Cotonou</p>
+                        </div>
+                    </label>
+                    <label class="delivery-option">
+                        <input type="radio" name="delivery" value="coursier">
+                        <div class="option-content">
+                            <h3><i class="fas fa-motorcycle"></i> Coursier</h3>
+                            <p>Livraison rapide dans 24h</p>
+                        </div>
+                    </label>
+                    <label class="delivery-option">
+                        <input type="radio" name="delivery" value="salon">
+                        <div class="option-content">
+                            <h3><i class="fas fa-store"></i> Retrait au salon</h3>
+                            <p>Fidjrosse, Cotonou</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Step 4: Payment -->
+            <div class="order-step" data-step="4">
+                <h2><i class="fas fa-credit-card"></i> Mode de paiement</h2>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="moov" required>
+                        <div class="option-content">
+                            <h3><i class="fas fa-mobile-alt"></i> Moov Money</h3>
+                            <p>Paiement par mobile money</p>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="mtn">
+                        <div class="option-content">
+                            <h3><i class="fas fa-mobile-alt"></i> MTN Money</h3>
+                            <p>Paiement par mobile money</p>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="online">
+                        <div class="option-content">
+                            <h3><i class="fas fa-credit-card"></i> Paiement en ligne</h3>
+                            <p>Carte bancaire sécurisée</p>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="onsite">
+                        <div class="option-content">
+                            <h3><i class="fas fa-hand-holding-usd"></i> À la livraison</h3>
+                            <p>Paiement sur place</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Step 5: Summary -->
+            <div class="order-step" data-step="5">
+                <h2><i class="fas fa-check-circle"></i> Résumé de votre commande</h2>
+                <div class="order-summary">
+                    <div class="summary-section">
+                        <h3>Client</h3>
+                        <p id="summaryClient"></p>
+                    </div>
+                    <div class="summary-section">
+                        <h3>Produits</h3>
+                        <div id="summaryProducts"></div>
+                    </div>
+                    <div class="summary-section">
+                        <h3>Livraison</h3>
+                        <p id="summaryDelivery"></p>
+                    </div>
+                    <div class="summary-section">
+                        <h3>Paiement</h3>
+                        <p id="summaryPayment"></p>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total:</span>
+                        <span id="summaryTotal">0 FCFA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="order-buttons">
+                <button class="btn btn-secondary" id="orderPrevBtn">
+                    <i class="fas fa-arrow-left"></i> Précédent
+                </button>
+                <button class="btn btn-primary" id="orderNextBtn">
+                    Suivant <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-success" id="orderWhatsAppBtn" style="display:none;">
+                    <i class="fab fa-whatsapp"></i> Commander via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal Wizard -->
+    <div class="booking-modal" id="bookingModal">
+        <div class="booking-modal__overlay"></div>
+        <div class="booking-modal__content">
+            <button class="booking-modal__close" id="closeBookingModal">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Progress Bar -->
+            <div class="booking-progress">
+                <div class="booking-progress__bar">
+                    <div class="booking-progress__fill" id="progressFill"></div>
+                </div>
+                <div class="booking-progress__text" id="progressText">Étape 1 sur 5</div>
+            </div>
+
+            <!-- Slide 1: Type de Service -->
+            <div class="booking-slide active" data-slide="1">
+                <h2 class="booking-slide__title">Quel type de service souhaitez-vous ?</h2>
+                <div class="booking-options">
+                    <button class="booking-option" data-service="cheveux">
+                        <i class="fas fa-cut"></i>
+                        <span>Cheveux</span>
+                    </button>
+                    <button class="booking-option" data-service="corps">
+                        <i class="fas fa-spa"></i>
+                        <span>Corps</span>
+                    </button>
+                    <button class="booking-option" data-service="visage">
+                        <i class="fas fa-star"></i>
+                        <span>Visage</span>
+                    </button>
+                    <button class="booking-option" data-service="ongles">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <span>Ongles</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 2: Prestation Cheveux -->
+            <div class="booking-slide" data-slide="2" data-category="cheveux">
+                <h2 class="booking-slide__title">Quelle prestation cheveux ?</h2>
+                <div class="booking-options">
+                    <button class="booking-option" data-prestation="Knotless Braids">
+                        <span>Knotless Braids</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Tissage">
+                        <span>Tissage</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Brushing">
+                        <span>Brushing</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Défrisage">
+                        <span>Défrisage</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Coloration">
+                        <span>Coloration</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Coupe simple">
+                        <span>Coupe simple</span>
+                    </button>
+                </div>
+                <div class="booking-add-service" style="display: none;">
+                    <button class="btn btn-secondary add-another-service" id="addServiceCheveux">
+                        <i class="fas fa-plus"></i> Ajouter un autre service
+                    </button>
+                    <button class="btn btn-primary continue-booking" id="continueCheveux">
+                        Continuer <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 2: Prestation Corps -->
+            <div class="booking-slide" data-slide="2" data-category="corps">
+                <h2 class="booking-slide__title">Quelle prestation corps ?</h2>
+                <div class="booking-options">
+                    <button class="booking-option" data-prestation="Massage relaxant 30min">
+                        <span>Massage relaxant (30min)</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Massage complet 60min">
+                        <span>Massage complet (60min)</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Gommage corps">
+                        <span>Gommage corps</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Épilation jambes complètes">
+                        <span>Épilation jambes complètes</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Épilation demi-jambes">
+                        <span>Épilation demi-jambes</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Épilation aisselles">
+                        <span>Épilation aisselles</span>
+                    </button>
+                </div>
+                <div class="booking-add-service" style="display: none;">
+                    <button class="btn btn-secondary add-another-service" id="addServiceCorps">
+                        <i class="fas fa-plus"></i> Ajouter un autre service
+                    </button>
+                    <button class="btn btn-primary continue-booking" id="continueCorps">
+                        Continuer <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 2: Prestation Visage -->
+            <div class="booking-slide" data-slide="2" data-category="visage">
+                <h2 class="booking-slide__title">Quelle prestation visage ?</h2>
+                <div class="booking-options">
+                    <button class="booking-option" data-prestation="Nettoyage de peau">
+                        <span>Nettoyage de peau</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Soin hydratant">
+                        <span>Soin hydratant</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Soin anti-âge">
+                        <span>Soin anti-âge</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Masque purifiant">
+                        <span>Masque purifiant</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Maquillage simple">
+                        <span>Maquillage simple</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Maquillage mariée">
+                        <span>Maquillage mariée</span>
+                    </button>
+                </div>
+                <div class="booking-add-service" style="display: none;">
+                    <button class="btn btn-secondary add-another-service" id="addServiceVisage">
+                        <i class="fas fa-plus"></i> Ajouter un autre service
+                    </button>
+                    <button class="btn btn-primary continue-booking" id="continueVisage">
+                        Continuer <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 2: Prestation Ongles -->
+            <div class="booking-slide" data-slide="2" data-category="ongles">
+                <h2 class="booking-slide__title">Quelle prestation ongles ?</h2>
+                <div class="booking-options">
+                    <button class="booking-option" data-prestation="Manucure simple">
+                        <span>Manucure simple</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Manucure gel">
+                        <span>Manucure gel</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Pédicure simple">
+                        <span>Pédicure simple</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Pédicure spa">
+                        <span>Pédicure spa</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Pose de faux ongles">
+                        <span>Pose de faux ongles</span>
+                    </button>
+                    <button class="booking-option" data-prestation="Nail art">
+                        <span>Nail art</span>
+                    </button>
+                </div>
+                <div class="booking-add-service" style="display: none;">
+                    <button class="btn btn-secondary add-another-service" id="addServiceOngles">
+                        <i class="fas fa-plus"></i> Ajouter un autre service
+                    </button>
+                    <button class="btn btn-primary continue-booking" id="continueOngles">
+                        Continuer <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 2.5: Récapitulatif des services -->
+            <div class="booking-slide" data-slide="2.5">
+                <h2 class="booking-slide__title">Récapitulatif de vos services</h2>
+                <div class="booking-summary" id="servicesSummary">
+                    <!-- Les services sélectionnés seront affichés ici -->
+                </div>
+                <button class="btn btn-primary" id="confirmServices">
+                    Valider et continuer <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Slide 3: Date -->
+            <div class="booking-slide" data-slide="3">
+                <h2 class="booking-slide__title">Quelle date souhaitez-vous ?</h2>
+                <div class="booking-form">
+                    <input type="date" id="bookingDate" class="booking-input" required>
+                    <button class="btn btn-primary booking-next" id="dateNext">Suivant</button>
+                </div>
+            </div>
+
+            <!-- Slide 4: Heure -->
+            <div class="booking-slide" data-slide="4">
+                <h2 class="booking-slide__title">À quelle heure ?</h2>
+                <p class="booking-slide__subtitle">Heures d'ouverture : Lundi - Samedi, 9h00 - 19h00</p>
+                <div class="booking-time-grid">
+                    <button class="booking-time" data-time="09:00">09:00</button>
+                    <button class="booking-time" data-time="10:00">10:00</button>
+                    <button class="booking-time" data-time="11:00">11:00</button>
+                    <button class="booking-time" data-time="12:00">12:00</button>
+                    <button class="booking-time" data-time="13:00">13:00</button>
+                    <button class="booking-time" data-time="14:00">14:00</button>
+                    <button class="booking-time" data-time="15:00">15:00</button>
+                    <button class="booking-time" data-time="16:00">16:00</button>
+                    <button class="booking-time" data-time="17:00">17:00</button>
+                    <button class="booking-time" data-time="18:00">18:00</button>
+                </div>
+            </div>
+
+            <!-- Slide 5: Informations personnelles -->
+            <div class="booking-slide" data-slide="5">
+                <h2 class="booking-slide__title">Vos coordonnées</h2>
+                <div class="booking-form">
+                    <input type="text" id="bookingName" class="booking-input" placeholder="Votre nom complet" required>
+                    <input type="tel" id="bookingPhone" class="booking-input" placeholder="Votre numéro de téléphone" required>
+                    <textarea id="bookingNotes" class="booking-textarea" placeholder="Informations complémentaires (optionnel)" rows="3"></textarea>
+                    <button class="btn btn-primary booking-submit" id="submitBooking">
+                        <i class="fab fa-whatsapp"></i> Envoyer la réservation
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="booking-nav">
+                <button class="btn btn-secondary booking-back" id="bookingBack" style="display: none;">
+                    <i class="fas fa-arrow-left"></i> Retour
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="order-modal.js"></script>
+</body>
+</html>
